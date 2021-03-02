@@ -1,0 +1,287 @@
+@font-text-color: #C0C0C0;
+@font-title-color: #ffffff;
+@background-color: #202020;
+@menu-option-hover-color: #5d5956;
+@table-font-color: @font-text-color;
+@table-border-th-color: @font-title-color;
+@table-border-td-color: @font-text-color;
+@modal-border-color: @font-text-color;
+@modal-background-color: @background-color;
+@placeholder-font-color: @font-text-color;
+@pre-border-color: @font-text-color;
+@menu-border-color: @font-text-color;
+@option-checked-color: @background-color;
+@option-checked-background-color: @font-text-color;
+@option-not-checked-background-color: @background-color;
+
+/********************************
+  Crud Page.-
+********************************/
+select {
+  background: inherit !important;
+  padding: 0px 6px !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  z-index: 100;
+}
+
+.select-arrow:before {
+  top: 30%;
+  left: 90%;
+  font-size: 9px;
+  font-style: normal;
+  position: absolute;
+  background: transparent;
+  font-family: 'Glyphicons Halflings';
+  content: '\e252';
+  z-index: 50;
+}
+
+option:not(:checked) {
+  color: inherit;
+  background-color: @option-not-checked-background-color;
+}
+
+option:checked {
+  color: @option-checked-color;
+  background-color: @option-checked-background-color;
+}
+
+label {
+  color: inherit;
+  font-weight: 100;
+}
+
+.close {
+  color: inherit;
+  font-size: 14px;
+}
+
+.modal-body {
+  padding-bottom: 5px;
+}
+
+.control-label {
+  padding-right: 0px;
+}
+
+.form-group {
+  margin-bottom: 9px;
+}
+
+.input-group-addon {
+  padding: 3px 6px;
+}
+
+.btn-group-xs .btn {
+  line-height: 1.5;
+  padding: 3px 10px;
+  border-radius: 3px;
+}
+
+.form-control,
+.form-group-sm .form-control {
+  height: 26px;
+  padding: 5px 10px;
+}
+
+.modal-content,
+.form-control,
+.input-group-addon,
+.btn-group-xs .btn {
+  font-size: inherit;
+  background: @modal-background-color;
+  color: @font-text-color;
+  border: 1px solid @modal-border-color;
+}
+
+.tab-content {
+  padding-top: 10px;
+}
+
+.nav li {
+  a:focus,
+  a:hover {
+    text-decoration: none;
+    color: @font-title-color;
+    background-color: transparent;
+  }
+}
+
+.nav-tabs {
+  li a {
+    border: none;
+  }
+  li.active {
+    a,
+    a:hover,
+    a:focus {
+      border: none;
+      border-radius: 0;
+      color: @font-title-color;
+      background-color: transparent;
+      border-bottom: solid 3px @font-title-color;
+    }
+  }
+  border-bottom: 1px solid @font-title-color;
+}
+
+.tooltip-inner {
+  width: 200px;
+  max-width: 200px;
+  text-align: left;
+  color: @font-text-color;
+  border: 1px solid @font-text-color;
+  background-color: @background-color;
+}
+
+.modal-header {
+  border-bottom: 1px solid @modal-border-color !important;
+}
+
+.modal-footer {
+  border-top: 1px solid @modal-border-color !important;
+}
+
+::-webkit-input-placeholder {
+  color: @placeholder-font-color !important;
+}
+
+::-moz-placeholder {
+  color: @placeholder-font-color !important;
+}
+
+.tooltip.top .tooltip-arrow {
+  border-top-color: @font-text-color;
+}
+
+.tooltip.left .tooltip-arrow {
+  border-left-color: @font-text-color;
+}
+
+.tooltip.bottom .tooltip-arrow {
+  border-bottom-color: @font-text-color;
+}
+
+.tooltip.right .tooltip-arrow {
+  border-right-color: @font-text-color;
+}
+
+/********************************
+  Base Page.-
+********************************/
+body {
+  font-size: 12px;
+  font-style: italic;
+  text-align: justify;
+  color: @font-title-color;
+  background: @background-color;
+}
+
+pre {
+  background-color: inherit;
+  border: 1px solid @pre-border-color;
+}
+
+dl, dd {
+  margin-bottom: 10px;
+}
+
+h2, h3, h4, dt {
+  text-align: left;
+}
+
+h2, h3, h4, dt, ul, dl, small {
+  color: @font-title-color !important;
+}
+
+p, li, pre, dd {
+  color: @font-text-color;
+}
+
+.table {
+  width: auto;
+  th {
+    color: inherit;
+    border-bottom: 2px solid @table-border-th-color !important;
+  }
+  td {
+    color: @table-font-color;
+    border-top: 1px dotted @table-border-td-color !important;
+  }
+}
+
+/********************************
+  Menu Section Mechanism.-
+********************************/
+#menu-open-button {
+  top: 3%;
+  right: 2%;
+  z-index: 3;
+  color: inherit;
+  position: fixed;
+  font-size: 15px;
+}
+
+div[class^='sub-section'] {
+  margin: 10px 0;
+}
+
+#page {
+  padding-right: 20%;
+}
+
+#page.toggled {
+  padding-right: 0;
+  #menu {
+    width: 0;
+  }
+}
+
+#menu {
+  z-index: 2;
+  right: 20%;
+  width: 20%;
+  height: 100%;
+  position: fixed;
+  overflow-y: auto;
+  border: 1px solid @menu-border-color;
+  margin: 0 -20% 0 0;
+  border-radius: 5px 0 0 5px;
+  ul {
+    border: 0;
+    height: auto;
+    li {
+      margin: 0;
+      a {
+        margin: 0;
+        border: 0;
+        padding: 0;
+        color: inherit;
+        border-radius: 0;
+      }
+      a.menu-l2 {
+        padding-left: 8px !important;
+      }
+
+      a.menu-l3 {
+        padding-left: 23px !important;
+      }
+    }
+    li.active a,
+    li a:hover {
+      text-decoration: none;
+      background: @menu-option-hover-color;
+      opacity: 1;
+    }
+  }
+}
+
+#page,
+#menu {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
