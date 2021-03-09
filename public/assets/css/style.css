@@ -382,8 +382,20 @@ Progress bars
 	background: #111;
 }
 
+.progress-bar.pb-orange {
+	background: gold;
+}
+
+.progress-bar.pb-lightcoral {
+	background: lightcoral;
+}
+
+.progress-bar.pb-brown {
+	background: brown;
+}
+
 .progress-bar.pb-red {
-	background: #111;
+	background: red;
 }
 
 .progress-bar span {
