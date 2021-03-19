@@ -386,6 +386,10 @@ Progress bars
 	background: gold;
 }
 
+.progress-bar.pb-bug {
+	background: coral;
+}
+
 .progress-bar.pb-lightcoral {
 	background: lightcoral;
 }
