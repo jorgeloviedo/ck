@@ -2026,6 +2026,8 @@ Preloader
 Scroll to top
 ------------------------------------------------------------------- */
 
+html { scroll-behavior: smooth; }
+
 .scroll-up {
 	position: fixed;
 	display: none;
