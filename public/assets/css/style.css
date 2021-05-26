@@ -382,6 +382,10 @@ Progress bars
 	background: #111;
 }
 
+.progress-bar.pb-bug {
+	background: red;
+}
+
 .progress-bar.pb-orange {
 	background: gold;
 }
