@@ -452,7 +452,7 @@
 			slideSpeed:      400,
 			paginationSpeed: 1000,
 			goToFirstSpeed:  2000,
-			autoPlay:        3000,
+			autoPlay:        7500,
 			transitionStyle : "fade",
 			navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
 		});
